@@ -28,7 +28,7 @@ jobs:
           # Set a generated TOKEN for updating gist.
           auth: ${{ secrets.GIST_TOKEN1 }}
           # Set id of the gist to be updated.
-          gist_url: https://gist.github.com/get-itips/583b039b117fa021774d99f8216dfc1c
+          gist_url: https://gist.github.com/get-itips/469e47b3afe7982269fe329515c213f5
           gist_title: InterpretedUserTypes.md
           gist_description: InterpretedUserType table
           github_file: ./docs/InterpretedUserTypes.md
