@@ -26,7 +26,7 @@ jobs:
           # Set a generated TOKEN for updating gist.
           token: eb755e3c02a623626774c00ab9b73688b9fa57fa
           # Set id of the gist to be updated.
-          gist_id: 03bcf6c300c319e49510a8c8977f494a
+          gist_id: 583b039b117fa021774d99f8216dfc1c
           # Set a file name in the gist.
           gist_file_name: InterpretedUserTypes.md
           # Set path of the file to be deployed
