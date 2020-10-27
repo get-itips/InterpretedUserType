@@ -1,0 +1,34 @@
+# This is a basic workflow to help you get started with Actions
+
+name: ToGist
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the main branch
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout
+      - uses: actions/checkout@v2
+      - uses: Popsiclestick/gist-sync-action@v1.1
+        id: sync
+        with:
+          # Set a generated TOKEN for updating gist.
+          auth: ${{ secrets.GIST_TOKEN1 }}
+          # Set id of the gist to be updated.
+          gist_url: https://gist.github.com/get-itips/583b039b117fa021774d99f8216dfc1c
+          gist_title: InterpretedUserType
+          gist_description: InterpretedUserType table
+          github_file: ./docs/InterpretedUserTypes.md
