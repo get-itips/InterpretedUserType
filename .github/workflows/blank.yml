@@ -1,0 +1,33 @@
+# This is a basic workflow to help you get started with Actions
+
+name: DeployToGist
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the main branch
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: exuanbo/actions-deploy-gist@v1.0.3
+        with:
+          # Set a generated TOKEN for updating gist.
+          token: eb755e3c02a623626774c00ab9b73688b9fa57fa
+          # Set id of the gist to be updated.
+          gist_id: 03bcf6c300c319e49510a8c8977f494a
+          # Set a file name in the gist.
+          gist_file_name: InterpretedUserTypes.md
+          # Set path of the file to be deployed
+          file_path: ./docs/InterpretedUserTypes.md
+
