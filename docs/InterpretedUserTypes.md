@@ -18,3 +18,4 @@
 |PureOnlineNoService| I still do not know exactly what that means.
 |PureOnlineNoServiceWithDeletedLicenses| User account created in Office 365, has no local AD account, so is not DirSynched, has no SfB license.
 |PureOnlineSfBUser| User account created in Office 365, has no local AD account, so is not DirSynched, and uses SfB Online.
+|AADConnectEnabledSfBUserWithTeamsLicenseNeedsProvisioningToAD|
