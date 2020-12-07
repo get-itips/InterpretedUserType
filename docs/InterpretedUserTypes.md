@@ -19,3 +19,31 @@
 |PureOnlineNoServiceWithDeletedLicenses| User account created in Office 365, has no local AD account, so is not DirSynched, has no SfB license.
 |PureOnlineSfBUser| User account created in Office 365, has no local AD account, so is not DirSynched, and uses SfB Online.
 |AADConnectEnabledSfBUserWithTeamsLicenseNeedsProvisioningToAD|
+|AADConnectDisabledOnlineActiveDirectoryDisabledUser|
+|AADConnectDisabledOnlineSfBUserWithTeamsLicensePendingDeletionFromAD|
+|AADConnectDisabledOnlineTeamsUser|
+|AADConnectDisabledOnlineTeamsUserPendingDeletionFromAD|
+|AADConnectDisabledOnlineUserNotLicensedForService|
+|AADConnectDisabledOnlineUserNotLicensedForServicePendingDeletionFromAD|
+|AADConnectEnabledOnlineActiveDirectoryDisabledUser|
+|AADConnectEnabledOnlineActiveDirectoryDisabledUserPendingAttributeRemovalFromAD|
+|AADConnectEnabledOnlineSfBUser|
+|AADConnectEnabledOnlineSfBUserWithTeamsLicense|
+|AADConnectEnabledOnlineTeamsUser|
+|AADConnectEnabledOnlineTeamsUserWithMCOValidationError|
+|AADConnectEnabledOnlineUserNotLicensedForService|
+|AADConnectEnabledOnlineUserNotLicensedForServicePendingAttributeRemovalFromAD|
+|HybridOnlineSfBUserWithTeamsLicense|
+|HybridOnpremActiveDirectoryDisabledUser|
+|HybridOnpremSfBUserWithMCOValidationError|
+|HybridOnpremSfBUserWithTeamsLicenseWithMCOValidationError|
+|HybridOnpremUserNotLicensedForService|
+|PureOnlineActiveDirectoryDisabledUser|
+|PureOnlineActiveDirectoryDisabledUserPendingAttributeRemovalFromAD|
+|PureOnlineApplicationInstance|
+|PureOnlineSfBUserWithTeamsLicense|
+|PureOnlineTeamsOnlyUser|
+|PureOnlineTeamsUser|
+|PureOnlineUserNotLicensedForService|
+|PureOnlineUserNotLicensedForServiceFailedPublishingToAAD|
+|PureOnlineUserNotLicensedForServicePendingAttributeRemovalFromAD|
