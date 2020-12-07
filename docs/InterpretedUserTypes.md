@@ -47,3 +47,5 @@
 |PureOnlineUserNotLicensedForService|
 |PureOnlineUserNotLicensedForServiceFailedPublishingToAAD|
 |PureOnlineUserNotLicensedForServicePendingAttributeRemovalFromAD|
+|PureOnlineTeamsOnlyUserFailedProvisioningToBVD|Enterprise Voice is enabled, and a number is added to the user. The number needs to synchronise into Microsoft's Business Voice Directory (BVD). When calls are received to Microsoft SBC's, the BVD is checked to determine which user the call should be routed to.
+|PureOnlineTeamsOnlyUserNeedsProvisioningToAD|
