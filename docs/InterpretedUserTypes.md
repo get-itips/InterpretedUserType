@@ -42,6 +42,7 @@
 |PureOnlineActiveDirectoryDisabledUserPendingAttributeRemovalFromAD||
 |PureOnlineActiveDirectoryDisabledUser||
 |PureOnlineApplicationInstance||
+|PureOnlineEnabledUserWithNoService||
 |PureOnlineEnabledUserWithSfBAndTeamsLicense||
 |PureOnlineEnabledUserWithTeamsLicense||
 |PureOnlineNoServiceWithDeletedLicenses| User account created in Office 365, has no local AD account, so is not DirSynched, has no SfB license.|
