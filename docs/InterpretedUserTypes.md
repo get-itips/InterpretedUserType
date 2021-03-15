@@ -25,6 +25,8 @@
 |DirSyncNoService| To this day, I still do not know exactly what that means.|
 |DirSyncSfBUserNeedsProvisioning| This appears to be a temporal state before DirSyncSfBUser|
 |DirSyncSfBUser| Enabled in SfB Online, has a SipAddress and has a RegistrarPool, this is the best value we can get.|
+|EnabledUserWithNoService|Active users without any license|
+|EnabledUserWithTeamsLicense|Active users with Teams license|
 |HybridOnlineDisabledUserNeedsProvisioning| User account disabled in SfB online, hasn't a SipAddress attribute online and OnPremHostingProvider is not empty.|
 |HybridOnlineDisabledUserWithDeletedLicenses| It's like HybridOnlineDisabledUser but, it seems that license is not assigned.|
 |HybridOnlineDisabledUser| User account disabled in SfB online, has a SipAddress attribute online and OnPremHostingProvider is not empty.|
@@ -37,8 +39,6 @@
 |HybridOnpremSfBUserWithTeamsLicenseWithMCOValidationError||
 |HybridOnpremSfBUser| According to Johan Delimon's Blog, the account is created at Customer AD, DirSynched and uses SfB OnPrem, we can judge this by the presence of OnPremHostingProvider.|
 |HybridOnpremUserNotLicensedForService||
-|EnabledUserWithNoService|Active users without any license|
-|EnabledUserWithTeamsLicense|Active users with Teams license|
 |PureOnlineActiveDirectoryDisabledUserPendingAttributeRemovalFromAD||
 |PureOnlineActiveDirectoryDisabledUser||
 |PureOnlineApplicationInstance||
