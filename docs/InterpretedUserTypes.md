@@ -11,8 +11,10 @@
 |AADConnectEnabledOnlineActiveDirectoryDisabledUser||
 |AADConnectEnabledOnlineSfBUserWithTeamsLicense||
 |AADConnectEnabledOnlineSfBUser||
+|AADConnectEnabledOnlineTeamsUserNeedsProvisioningToAD||
 |AADConnectEnabledOnlineTeamsUserWithMCOValidationError||
 |AADConnectEnabledOnlineTeamsUser||
+|AADConnectEnabledOnlineUserNotLicensedForServiceNeedsProvisioningToAD||
 |AADConnectEnabledOnlineUserNotLicensedForServicePendingAttributeRemovalFromAD||
 |AADConnectEnabledOnlineUserNotLicensedForService||
 |AADConnectEnabledSfBUserWithTeamsLicenseNeedsProvisioningToAD||
@@ -35,7 +37,8 @@
 |HybridOnpremSfBUserWithTeamsLicenseWithMCOValidationError||
 |HybridOnpremSfBUser| According to Johan Delimon's Blog, the account is created at Customer AD, DirSynched and uses SfB OnPrem, we can judge this by the presence of OnPremHostingProvider.|
 |HybridOnpremUserNotLicensedForService||
-|EnabledUserWithNoService|Active users without any license||
+|EnabledUserWithNoService|Active users without any license|
+|EnabledUserWithTeamsLicense|Active users with Teams license|
 |PureOnlineActiveDirectoryDisabledUserPendingAttributeRemovalFromAD||
 |PureOnlineActiveDirectoryDisabledUser||
 |PureOnlineApplicationInstance||
