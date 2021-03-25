@@ -2,6 +2,7 @@
 | InterpretedUserType | Possible Description |
 |------- | -------------------- |
 |AADConnectDisabledOnlineActiveDirectoryDisabledUser||
+|AADConnectDisabledOnlineActiveDirectoryDisabledUserPendingDeletionFromAD||
 |AADConnectDisabledOnlineSfBUserWithTeamsLicensePendingDeletionFromAD||
 |AADConnectDisabledOnlineTeamsUserPendingDeletionFromAD||
 |AADConnectDisabledOnlineTeamsUser||
@@ -10,11 +11,14 @@
 |AADConnectEnabledOnlineActiveDirectoryDisabledUserPendingAttributeRemovalFromAD||
 |AADConnectEnabledOnlineActiveDirectoryDisabledUser||
 |AADConnectEnabledOnlineSfBUserWithTeamsLicense||
+|AADConnectEnabledOnlineSfBUserWithTeamsLicenseWithMCOValidationError||
+|AADConnectEnabledOnlineTeamsOnlyUserNotLicensedForServiceInPDLPendingAttributeRemovalFromAD||
 |AADConnectEnabledOnlineSfBUser||
 |AADConnectEnabledOnlineTeamsUserNeedsProvisioningToAD||
 |AADConnectEnabledOnlineTeamsUserWithMCOValidationError||
 |AADConnectEnabledOnlineTeamsUser||
 |AADConnectEnabledOnlineUserNotLicensedForServiceNeedsProvisioningToAD||
+|AADConnectEnabledOnlineUserNotLicensedForServiceNotInPDL||
 |AADConnectEnabledOnlineUserNotLicensedForServicePendingAttributeRemovalFromAD||
 |AADConnectEnabledOnlineUserNotLicensedForService||
 |AADConnectEnabledSfBUserWithTeamsLicenseNeedsProvisioningToAD||
@@ -32,10 +36,13 @@
 |HybridOnlineDisabledUser| User account disabled in SfB online, has a SipAddress attribute online and OnPremHostingProvider is not empty.|
 |HybridOnlineSfBUserWithDeletedLicenses| Same as HybridOnlineSfBUser but judging by the name, it seems that license is not present.|
 |HybridOnlineSfBUserWithTeamsLicense||
+|HybridOnlineTeamsOnlyUserNeedsProvisioningToAD||
 |HybridOnlineSfBUser| User account enabled and DirSynched, has a SipAddress and a OnPremHostingProvider and RegistrarPool.|
 |HybridOnpremActiveDirectoryDisabledUser||
+|HybridOnpremActiveDirectoryDisabledUserWithMCOValidationError||
 |HybridOnpremDisabledUser| User account disabled in SfB OnPrem, OnPremHostingProvider has "SRV:" value and RegistrarPool is empty.|
 |HybridOnpremSfBUserWithMCOValidationError||
+|HybridOnpremSfBUserWithTeamsLicense||
 |HybridOnpremSfBUserWithTeamsLicenseWithMCOValidationError||
 |HybridOnpremSfBUser| According to Johan Delimon's Blog, the account is created at Customer AD, DirSynched and uses SfB OnPrem, we can judge this by the presence of OnPremHostingProvider.|
 |HybridOnpremUserNotLicensedForService||
