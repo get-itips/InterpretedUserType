@@ -45,6 +45,7 @@
 |HybridOnpremSfBUserWithTeamsLicense||
 |HybridOnpremSfBUserWithTeamsLicenseWithMCOValidationError||
 |HybridOnpremSfBUser| According to Johan Delimon's Blog, the account is created at Customer AD, DirSynched and uses SfB OnPrem, we can judge this by the presence of OnPremHostingProvider.|
+|HybridOnpremTeamsOnlyUser||
 |HybridOnpremUserNotLicensedForService||
 |PureOnlineActiveDirectoryDisabledUserPendingAttributeRemovalFromAD||
 |PureOnlineActiveDirectoryDisabledUser||
