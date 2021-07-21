@@ -1,3 +1,4 @@
+# InterpretedUserType table
 
 | InterpretedUserType | Possible Description |
 |------- | -------------------- |
@@ -64,3 +65,43 @@
 |PureOnlineUserNotLicensedForServiceFailedPublishingToAAD||
 |PureOnlineUserNotLicensedForServicePendingAttributeRemovalFromAD||
 |PureOnlineUserNotLicensedForService||
+
+#### The InterpretedUserType value is composed of four other possible values, following you will find these collected values and its possible meaning:
+
+# UserType table
+
+| UserType | Possible Description |
+|------- | -------------------- |
+|NoService|User does not meet any of the other UserTypes criteria; These are generally unlicensed users |
+|SfBUser|User has an enabled SfB Online base license|
+|TeamsUser|User has an Enabled Teams Online license and no Enabled SfB Online base license (Note: Don't be confused about this; we still require SfB Online License) |
+|FreemiumUser|User is assigned a Teams Online Freemium license or an SfB Online Freemium license |
+|DisabledUser|User is not an Application Endpoint, and the AD object is Disabled in UserAccountControl regardless of Online license state |
+|AppEndpoint|User is an Application Endpoint |
+
+# UserSubType table
+
+| UserSubType | Possible Description |
+|------- | -------------------- |
+|PureOnline | User is not configured for AAD Connect |
+|HybridOnPrem | User is enabled for AAD Connect, the user is syncing on-prem SfB AD attributes and the user’s on-prem msRTCSIP-DeploymentLocator attribute is “SRV:”; does not indicate or take into consideration the status of ShareSipAddressSpace |
+|HybridOnline | User is enabled for AAD Connect, the user is syncing on-prem SfB AD attributes and the user’s on-prem msRTCSIP-DeploymentLocator attribute is an Online hosting provider, usually “http://sipfed.online.lync.com” ; does not indicate or take into consideration the status of ShareSipAddressSpace |
+|DirSyncDisabled | User is explicitly disabled for AAD Connect; considered the same as PureOnline |
+|DirSync| User is enabled for AAD Connect but the user is not syncing on-prem SfB AD attributes, specifically the msRTCSIP-DeploymentLocator attribute |
+
+# UserState table
+
+| UserState | Possible Description |
+|------- | -------------------- |
+| WithMCOValidationError | User failed provisioning with a tenant admin correctable error. The user’s MCOValidationError property will contain details of the error and how to correct it. |
+|FailedProvisioning | User failed provisioning and will be retried in the next retry interval. |
+|FailedBvdProvisioning |User failed provisioning and will be retried in the next retry interval. |
+|NeedsProvisioning| User is waiting for provisioning to start. |
+|WithDeletedLicenses| User’s LicenseRemovalTimeStamp is set. |
+|PendingXForestMove | User has a XForestMovePolicy set. |
+
+# UserUserMncState table
+| UserMncState | Possible Description |
+|------- | -------------------- |
+|NotInPDL | User has a Preferred Data Location set but is not assigned an SfB Online registrar pool in the current AD Forest. Caveat: User could be in their PDL but not provisioned yet. |
+|InPDL | User has a Preferred Data Location set and is assigned an SfB Online registrar pool in the current AD Forest|
