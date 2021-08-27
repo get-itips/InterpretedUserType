@@ -35,6 +35,7 @@
 |HybridOnlineDisabledUserNeedsProvisioning| User account disabled in SfB online, hasn't a SipAddress attribute online and OnPremHostingProvider is not empty.|
 |HybridOnlineDisabledUserWithDeletedLicenses| It's like HybridOnlineDisabledUser but, it seems that license is not assigned.|
 |HybridOnlineDisabledUser| User account disabled in SfB online, has a SipAddress attribute online and OnPremHostingProvider is not empty.|
+|HybridOnlineEnabledUserWithSfBAndTeamsLicense||
 |HybridOnlineSfBUserWithDeletedLicenses| Same as HybridOnlineSfBUser but judging by the name, it seems that license is not present.|
 |HybridOnlineSfBUserWithTeamsLicense||
 |HybridOnlineTeamsOnlyUserNeedsProvisioningToAD||
