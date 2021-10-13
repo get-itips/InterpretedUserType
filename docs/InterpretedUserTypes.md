@@ -13,6 +13,7 @@
 |AADConnectEnabledOnlineActiveDirectoryDisabledUser||
 |AADConnectEnabledOnlineSfBUserWithTeamsLicense||
 |AADConnectEnabledOnlineSfBUserWithTeamsLicenseWithMCOValidationError||
+|AADConnectEnabledOnlineActiveDirectoryDisabledUserPendingAttributeRemovalFromAD|Synced user with object disabled in local Active Directory, awaiting removal of all parameters. (object was deleted)<br>**AADConnect..** - Directory Synchronisation is employed with Azure AD Connect<br>**..Enabled..** - Object is Enabled for Synchronisation<br>**..Online..** - Authoritative Object is in 365, for example User located in Skype Online or Teams<br>**..ActiveDirectoryDisabled..** - Object Disabled in Active Directory<br>**..User..** - User Object: Query with AzureAdUser, CsOnlineUser, etc.<br>**..PendingAttributeRemovalFromAD** - Temporary State until all Parameters have been removed (Object was deleted)|
 |AADConnectEnabledOnlineTeamsOnlyUserNotLicensedForServiceInPDLPendingAttributeRemovalFromAD||
 |AADConnectEnabledOnlineSfBUser||
 |AADConnectEnabledOnlineTeamsUserNeedsProvisioningToAD||
