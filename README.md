@@ -42,7 +42,9 @@ $knownTypes = $webRequest.Content -split '\r?\n' -replace '^\|\s*(\w+).*','$1' |
 
 # grub data from SFBO
 Connect-MicrosoftTeams
-$sfbo = New-CsOnlineSession
+# dummy cmdlet invocation to force session establishment
+Get-CsOnlineUser -ResultSize 1 | Out-Null
+$sfbo = Get-PSSession | Where-Object {$_.Name -like 'SfBPowerShellSessionViaTeamsModule*' -and $_.State -eq 'Opened' }
 $myTypes = Invoke-Command -Session $sfbo -ScriptBlock { Get-CsOnlineUser -ResultSize Unlimited | Select-Object InterpretedUserType -Unique } | Select-Object InterpretedUserType
 
 # report new types
