@@ -9,14 +9,22 @@
 |AADConnectDisabledOnlineTeamsUser||
 |AADConnectDisabledOnlineUserNotLicensedForServicePendingDeletionFromAD||
 |AADConnectDisabledOnlineUserNotLicensedForService||
+|AADConnectEnabledOnlineActiveDirectoryDisabledUserInPDL||
+|AADConnectEnabledOnlineActiveDirectoryDisabledUserNotInPDL||
 |AADConnectEnabledOnlineActiveDirectoryDisabledUserPendingAttributeRemovalFromAD||
 |AADConnectEnabledOnlineActiveDirectoryDisabledUser||
 |AADConnectEnabledOnlineSfBUserWithTeamsLicense||
+|AADConnectEnabledOnlineSfBUserWithTeamsLicenseInPDL||
 |AADConnectEnabledOnlineSfBUserWithTeamsLicenseWithMCOValidationError||
 |AADConnectEnabledOnlineActiveDirectoryDisabledUserPendingAttributeRemovalFromAD|Synced user with object disabled in local Active Directory, awaiting removal of all parameters. (object was deleted)<br>**AADConnect..** - Directory Synchronisation is employed with Azure AD Connect<br>**..Enabled..** - Object is Enabled for Synchronisation<br>**..Online..** - Authoritative Object is in 365, for example User located in Skype Online or Teams<br>**..ActiveDirectoryDisabled..** - Object Disabled in Active Directory<br>**..User..** - User Object: Query with AzureAdUser, CsOnlineUser, etc.<br>**..PendingAttributeRemovalFromAD** - Temporary State until all Parameters have been removed (Object was deleted)|
 |AADConnectEnabledOnlineTeamsOnlyUserNotLicensedForServiceInPDLPendingAttributeRemovalFromAD||
 |AADConnectEnabledOnlineSfBUser||
+|AADConnectEnabledOnlineTeamsOnlyUser||
+|AADConnectEnabledOnlineTeamsOnlyUserInPDL||
+|AADConnectEnabledOnlineTeamsOnlyUserNotLicensedForService||
+|AADConnectEnabledOnlineTeamsOnlyUserNotLicensedForServicePendingAttributeRemovalFromAD||
 |AADConnectEnabledOnlineTeamsUserNeedsProvisioningToAD||
+|AADConnectEnabledOnlineTeamsUserNotInPDL||
 |AADConnectEnabledOnlineTeamsUserWithMCOValidationError||
 |AADConnectEnabledOnlineTeamsUser||
 |AADConnectEnabledOnlineUserNotLicensedForServiceNeedsProvisioningToAD||
@@ -33,26 +41,39 @@
 |DirSyncSfBUser| Enabled in SfB Online, has a SipAddress and has a RegistrarPool, this is the best value we can get.|
 |EnabledUserWithNoService|Active users without any license|
 |EnabledUserWithTeamsLicense|Active users with Teams license|
+|HybridOnlineActiveDirectoryDisabledUser||
+|HybridOnlineActiveDirectoryDisabledUserInPDL||
+|HybridOnlineActiveDirectoryDisabledUserInPDLPendingAttributeRemovalFromAD||
+|HybridOnlineActiveDirectoryDisabledUserNotInPDL||
+|HybridOnlineActiveDirectoryDisabledUserPendingAttributeRemovalFromAD||
 |HybridOnlineDisabledUserNeedsProvisioning| User account disabled in SfB online, hasn't a SipAddress attribute online and OnPremHostingProvider is not empty.|
 |HybridOnlineDisabledUserWithDeletedLicenses| It's like HybridOnlineDisabledUser but, it seems that license is not assigned.|
 |HybridOnlineDisabledUser| User account disabled in SfB online, has a SipAddress attribute online and OnPremHostingProvider is not empty.|
 |HybridOnlineEnabledUserWithSfBAndTeamsLicense| User account was created in local AD, DirSynced and uses SfB online and Teams, it has also both SfB and Teams license assigned.|
 |HybridOnlineSfBUserWithDeletedLicenses| Same as HybridOnlineSfBUser but judging by the name, it seems that license is not present.|
 |HybridOnlineSfBUserWithTeamsLicense||
+|HybridOnlineTeamsOnlyUser||
 |HybridOnlineTeamsOnlyUserNeedsProvisioningToAD||
+|HybridOnlineTeamsOnlyUserInPDL||
+|HybridOnlineTeamsOnlyUserNotLicensedForService||
+|HybridOnlineTeamsOnlyUserNotLicensedForServiceNotInPDL||
+|HybridOnlineTeamsOnlyUserNotLicensedForServicePendingAttributeRemovalFromAD||
 |HybridOnlineSfBUser| User account enabled and DirSynched, has a SipAddress and a OnPremHostingProvider and RegistrarPool.|
 |HybridOnpremActiveDirectoryDisabledUser||
 |HybridOnpremActiveDirectoryDisabledUserWithMCOValidationError||
 |HybridOnpremDisabledUser| User account disabled in SfB OnPrem, OnPremHostingProvider has "SRV:" value and RegistrarPool is empty.|
+|HybridOnpremSfBUserFailedPublishingToAAD||
 |HybridOnpremSfBUserWithMCOValidationError||
 |HybridOnpremSfBUserWithTeamsLicense||
 |HybridOnpremSfBUserWithTeamsLicenseWithMCOValidationError||
 |HybridOnpremSfBUser| According to Johan Delimon's Blog, the account is created at Customer AD, DirSynched and uses SfB OnPrem, we can judge this by the presence of OnPremHostingProvider.|
 |HybridOnpremTeamsOnlyUser||
+|HybridOnpremTeamsUserWithMCOValidationError||
 |HybridOnpremUserNotLicensedForService||
 |PureOnlineActiveDirectoryDisabledUserPendingAttributeRemovalFromAD||
 |PureOnlineActiveDirectoryDisabledUser||
 |PureOnlineApplicationInstance||
+|PureOnlineApplicationInstancePendingDeletionFromAD||
 |PureOnlineEnabledUserWithNoService||
 |PureOnlineEnabledUserWithSfBAndTeamsLicense||
 |PureOnlineEnabledUserWithTeamsLicense||
@@ -62,7 +83,10 @@
 |PureOnlineSfBUser| User account created in Office 365, has no local AD account, so is not DirSynched, and uses SfB Online.|
 |PureOnlineTeamsOnlyUserFailedProvisioningToBVD|Enterprise Voice is enabled, and a number is added to the user. The number needs to synchronise into Microsoft's Business Voice Directory (BVD). When calls are received to Microsoft SBC's, the BVD is checked to determine which user the call should be routed to.|
 |PureOnlineTeamsOnlyUserNeedsProvisioningToAD||
+|PureOnlineTeamsOnlyUserNotLicensedForService||
+|PureOnlineTeamsOnlyUserNotLicensedForServiceWithMCOValidationError||
 |PureOnlineTeamsOnlyUser||
+|PureOnlineTeamsOnlyUserPendingDeletionFromAD||
 |PureOnlineTeamsUser||
 |PureOnlineUserNotLicensedForServiceFailedPublishingToAAD||
 |PureOnlineUserNotLicensedForServicePendingAttributeRemovalFromAD||
