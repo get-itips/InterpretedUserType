@@ -9,28 +9,28 @@
 |AADConnectDisabledOnlineTeamsUser||
 |AADConnectDisabledOnlineUserNotLicensedForServicePendingDeletionFromAD||
 |AADConnectDisabledOnlineUserNotLicensedForService||
-|AADConnectEnabledOnlineActiveDirectoryDisabledUserInPDL||
-|AADConnectEnabledOnlineActiveDirectoryDisabledUserNotInPDL||
-|AADConnectEnabledOnlineActiveDirectoryDisabledUserPendingAttributeRemovalFromAD||
-|AADConnectEnabledOnlineActiveDirectoryDisabledUser||
-|AADConnectEnabledOnlineSfBUserWithTeamsLicense||
-|AADConnectEnabledOnlineSfBUserWithTeamsLicenseInPDL||
-|AADConnectEnabledOnlineSfBUserWithTeamsLicenseWithMCOValidationError||
-|AADConnectEnabledOnlineActiveDirectoryDisabledUserPendingAttributeRemovalFromAD|Synced user with object disabled in local Active Directory, awaiting removal of all parameters. (object was deleted)<br>**AADConnect..** - Directory Synchronisation is employed with Azure AD Connect<br>**..Enabled..** - Object is Enabled for Synchronisation<br>**..Online..** - Authoritative Object is in 365, for example User located in Skype Online or Teams<br>**..ActiveDirectoryDisabled..** - Object Disabled in Active Directory<br>**..User..** - User Object: Query with AzureAdUser, CsOnlineUser, etc.<br>**..PendingAttributeRemovalFromAD** - Temporary State until all Parameters have been removed (Object was deleted)|
-|AADConnectEnabledOnlineTeamsOnlyUserNotLicensedForServiceInPDLPendingAttributeRemovalFromAD||
-|AADConnectEnabledOnlineSfBUser||
-|AADConnectEnabledOnlineTeamsOnlyUser||
-|AADConnectEnabledOnlineTeamsOnlyUserInPDL||
-|AADConnectEnabledOnlineTeamsOnlyUserNotLicensedForService||
-|AADConnectEnabledOnlineTeamsOnlyUserNotLicensedForServicePendingAttributeRemovalFromAD||
-|AADConnectEnabledOnlineTeamsUserNeedsProvisioningToAD||
-|AADConnectEnabledOnlineTeamsUserNotInPDL||
-|AADConnectEnabledOnlineTeamsUserWithMCOValidationError||
-|AADConnectEnabledOnlineTeamsUser||
-|AADConnectEnabledOnlineUserNotLicensedForServiceNeedsProvisioningToAD||
-|AADConnectEnabledOnlineUserNotLicensedForServiceNotInPDL||
-|AADConnectEnabledOnlineUserNotLicensedForServicePendingAttributeRemovalFromAD||
-|AADConnectEnabledOnlineUserNotLicensedForService||
+|DirSyncEnabledOnlineActiveDirectoryDisabledUserInPDL||
+|DirSyncEnabledOnlineActiveDirectoryDisabledUserNotInPDL||
+|DirSyncEnabledOnlineActiveDirectoryDisabledUserPendingAttributeRemovalFromAD||
+|DirSyncEnabledOnlineActiveDirectoryDisabledUser||
+|DirSyncEnabledOnlineSfBUserWithTeamsLicense||
+|DirSyncEnabledOnlineSfBUserWithTeamsLicenseInPDL||
+|DirSyncEnabledOnlineSfBUserWithTeamsLicenseWithMCOValidationError||
+|DirSyncEnabledOnlineActiveDirectoryDisabledUserPendingAttributeRemovalFromAD|Synced user with object disabled in local Active Directory, awaiting removal of all parameters. (object was deleted)<br>**AADConnect..** - Directory Synchronisation is employed with Azure AD Connect<br>**..Enabled..** - Object is Enabled for Synchronisation<br>**..Online..** - Authoritative Object is in 365, for example User located in Skype Online or Teams<br>**..ActiveDirectoryDisabled..** - Object Disabled in Active Directory<br>**..User..** - User Object: Query with AzureAdUser, CsOnlineUser, etc.<br>**..PendingAttributeRemovalFromAD** - Temporary State until all Parameters have been removed (Object was deleted)|
+|DirSyncEnabledOnlineTeamsOnlyUserNotLicensedForServiceInPDLPendingAttributeRemovalFromAD||
+|DirSyncEnabledOnlineSfBUser||
+|DirSyncEnabledOnlineTeamsOnlyUser||
+|DirSyncEnabledOnlineTeamsOnlyUserInPDL||
+|DirSyncEnabledOnlineTeamsOnlyUserNotLicensedForService||
+|DirSyncEnabledOnlineTeamsOnlyUserNotLicensedForServicePendingAttributeRemovalFromAD||
+|DirSyncEnabledOnlineTeamsUserNeedsProvisioningToAD||
+|DirSyncEnabledOnlineTeamsUserNotInPDL||
+|DirSyncEnabledOnlineTeamsUserWithMCOValidationError||
+|DirSyncEnabledOnlineTeamsUser||
+|DirSyncEnabledOnlineUserNotLicensedForServiceNeedsProvisioningToAD||
+|DirSyncEnabledOnlineUserNotLicensedForServiceNotInPDL||
+|DirSyncEnabledOnlineUserNotLicensedForServicePendingAttributeRemovalFromAD||
+|DirSyncEnabledOnlineUserNotLicensedForService||
 |AADConnectEnabledSfBUserWithTeamsLicenseNeedsProvisioningToAD||
 |DirSyncDisabledDisabledUser| User account disabled in SfB online and disabled in local AD, has a sipAddress attribute online, RegistrarPool has a value.|
 |DirSyncDisabledNoService| User account disabled in SfB online and does not have a sipAddress attribute online, RegistrarPool empty, OnPremHostingProvider shows sipfed.online.lync.com.|
